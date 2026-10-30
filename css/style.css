@@ -82,8 +82,9 @@ a:hover { text-decoration: underline; }
 /* ---------- 大きな写真（ヒーロー） ---------- */
 /* 写真（images/top1.jpg）をそのままの縦横比で、ページの幅いっぱいに表示します。
    帯の高さは写真の高さに合わせて自動で決まります（切り取りなし）。 */
-.hero { padding: 0; }
-.hero-photo { display: block; width: 100%; height: auto; }
+.hero { padding: 24px 0 0; text-align: center; }
+/* 写真はページ幅の60%の大きさ（縦横比はそのまま）。数字を変えると大きさが変わります */
+.hero-photo { display: block; width: 60%; height: auto; margin: 0 auto; }
 
 /* ---------- セクション共通 ---------- */
 .section { padding: 70px 0; }
