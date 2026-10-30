@@ -110,6 +110,7 @@ a:hover { text-decoration: underline; }
 }
 .lead { font-size: 20px; letter-spacing: 0.05em; margin: 0 0 20px; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.photo { width: 100%; border-radius: 4px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); }
 .photo-box {
   aspect-ratio: 4 / 3;
   background: linear-gradient(135deg, #d9cfc2, #b9a88f);
