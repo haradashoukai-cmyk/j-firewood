@@ -69,6 +69,7 @@ a:hover { text-decoration: underline; }
 .nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
 .nav a { color: var(--sumi); font-size: 15px; letter-spacing: 0.05em; }
 .nav a.current { color: var(--akane); }
+.nav a.btn { color: var(--white); }
 
 .btn {
   display: inline-block;
