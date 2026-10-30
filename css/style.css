@@ -80,11 +80,6 @@ a:hover { text-decoration: underline; }
 .tel { font-size: 20px; letter-spacing: 0.05em; color: var(--sumi); }
 
 /* ---------- 大きな写真（ヒーロー） ---------- */
-/* 写真（images/top1.jpg）をそのままの縦横比で、ページの幅いっぱいに表示します。
-   帯の高さは写真の高さに合わせて自動で決まります（切り取りなし）。 */
-.hero { padding: 24px 0 0; text-align: center; }
-/* 写真はページ幅の60%の大きさ（縦横比はそのまま）。数字を変えると大きさが変わります */
-.hero-photo { display: block; width: 60%; height: auto; margin: 0 auto; }
 
 /* ---------- セクション共通 ---------- */
 .section { padding: 70px 0; }
@@ -202,4 +197,38 @@ a:hover { text-decoration: underline; }
   .two-col, .access, .products, .posts { grid-template-columns: 1fr; }
   .product dt { float: none; width: auto; }
   .product dd { margin-left: 0; }
+}
+
+/* ---------- トップ（写真＋一言＋問合せ） ---------- */
+/* 左に写真、右に「薪を販売しています」の一言と値段・ボタン。スマホでは縦に並びます */
+.hero { padding: 36px 0 12px; }
+.hero-inner { display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; }
+.hero-photo { display: block; width: 100%; height: auto; border-radius: 4px; }
+.hero-catch { font-size: 30px; line-height: 1.5; letter-spacing: 0.06em; margin: 0 0 14px; }
+.hero-price { font-size: 18px; margin: 0 0 10px; }
+.hero-price strong { font-size: 32px; color: var(--akane); font-weight: normal; margin: 0 2px; }
+.hero-price-sub { display: block; font-size: 14px; color: var(--hai); }
+.hero-text p { margin: 0 0 10px; }
+.hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 18px; }
+.tel-link { font-size: 24px; letter-spacing: 0.05em; color: var(--sumi); }
+.hero-note { font-size: 13px; color: var(--hai); margin-top: 12px !important; }
+@media (max-width: 800px) {
+  .hero { padding: 20px 0 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: 20px; }
+  .hero-catch { font-size: 24px; }
+  .hero-price strong { font-size: 28px; }
+}
+
+/* スマホではヘッダーを小さくまとめる（店名が2行に折れず、最初の画面に写真と値段が入るように） */
+@media (max-width: 800px) {
+  .site-header { position: static; }
+  .site-header .wrap { padding-top: 10px; padding-bottom: 10px; gap: 10px; }
+  .brand { gap: 10px; text-align: left; }
+  .brand .logo { width: 64px; }
+  .brand .name { font-size: 22px; letter-spacing: 0.04em; white-space: nowrap; }
+  .brand .tagline { font-size: 13px; }
+  .nav { gap: 8px 14px; }
+  .nav a { font-size: 14px; }
+  .nav .btn { padding: 9px 16px; font-size: 14px; }
+  .nav .tel { display: none; }
 }
