@@ -87,10 +87,10 @@ a:hover { text-decoration: underline; }
   place-items: center;
   text-align: center;
   color: var(--white);
-  /* 背景写真は images/top1.jpg（文字やボタンは置かず、写真だけを見せる） */
-  background: url("../images/top1.jpg");
+  /* 背景写真は images/top4.jpg（文字やボタンは置かず、写真だけを見せる） */
+  background: url("../images/top4.jpg");
   background-size: cover;
-  background-position: center 60%;
+  background-position: center 55%;
 }
 /* 見た目には出さず、検索エンジン用にだけ残す見出し */
 .visually-hidden {
