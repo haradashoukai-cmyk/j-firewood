@@ -52,16 +52,9 @@ a:hover { text-decoration: underline; }
 }
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand .logo {
-  width: 64px; height: 64px;
-  border: 2px solid var(--akane);
-  border-radius: 4px;
-  display: grid; place-items: center;
-  color: var(--akane);
-  font-size: 11px;
-  text-align: center;
-  line-height: 1.3;
-  background: #fff8f3;
-  object-fit: cover;
+  width: 84px; height: auto;
+  border-radius: 3px;
+  flex-shrink: 0;
 }
 .brand .name { font-size: 24px; letter-spacing: 0.08em; color: var(--sumi); }
 .brand .tagline { font-size: 13px; color: var(--hai); margin: 0; }
