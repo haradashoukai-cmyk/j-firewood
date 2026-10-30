@@ -52,12 +52,12 @@ a:hover { text-decoration: underline; }
 }
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand .logo {
-  width: 84px; height: auto;
+  width: 108px; height: auto;
   border-radius: 3px;
   flex-shrink: 0;
 }
-.brand .name { font-size: 24px; letter-spacing: 0.08em; color: var(--sumi); }
-.brand .tagline { font-size: 13px; color: var(--hai); margin: 0; }
+.brand .name { font-size: 31px; letter-spacing: 0.08em; color: var(--sumi); }
+.brand .tagline { font-size: 17px; color: var(--hai); margin: 0; }
 
 .nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
 .nav a { color: var(--sumi); font-size: 15px; letter-spacing: 0.05em; }
