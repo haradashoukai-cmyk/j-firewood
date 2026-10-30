@@ -87,13 +87,15 @@ a:hover { text-decoration: underline; }
   place-items: center;
   text-align: center;
   color: var(--white);
-  /* 背景写真は images/top1.jpg。文字を読みやすくするため、写真の上に薄い黒を重ねています */
-  background:
-    linear-gradient(rgba(30, 24, 18, 0.38), rgba(30, 24, 18, 0.38)),
-    url("../images/top1.jpg");
+  /* 背景写真は images/top1.jpg（文字やボタンは置かず、写真だけを見せる） */
+  background: url("../images/top1.jpg");
   background-size: cover;
   background-position: center 60%;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+/* 見た目には出さず、検索エンジン用にだけ残す見出し */
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
 }
 .hero h1 { font-size: 34px; font-weight: normal; letter-spacing: 0.12em; margin: 0 0 10px; }
 .hero p { margin: 0; font-size: 17px; letter-spacing: 0.08em; }
